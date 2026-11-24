@@ -1,0 +1,82 @@
+{
+  "sources": {
+    "01_student_roster.xlsx": {
+      "format": "Excel student lists",
+      "records_read": 244,
+      "records_kept": 240
+    },
+    "02_enrollment_form_responses.csv": {
+      "format": "Online form (CSV)",
+      "records_read": 241,
+      "records_kept": 224
+    },
+    "03_gradebook_term1.xlsx": {
+      "format": "Excel gradebook",
+      "records_read": 476,
+      "records_kept": 458
+    },
+    "04_science_department_results.docx": {
+      "format": "Word tables",
+      "records_read": 237,
+      "records_kept": 222
+    },
+    "05_history_gpa_report.pdf": {
+      "format": "PDF table",
+      "records_read": 241,
+      "records_kept": 229
+    },
+    "06_gate_attendance.log": {
+      "format": "System log",
+      "records_read": 9519,
+      "records_kept": 9308
+    }
+  },
+  "pdf_pages": 7,
+  "log": {
+    "lines": 9519,
+    "noise": 140,
+    "malformed": 6,
+    "alt_timestamp": 87,
+    "events_used": 9308,
+    "school_days": 20,
+    "flags": 83
+  },
+  "students": 240,
+  "actions": {
+    "corrected": 174,
+    "omitted": 152,
+    "standardised": 151,
+    "missing": 49,
+    "flagged": 47
+  },
+  "review": {
+    "medium": 124,
+    "low": 80,
+    "high": 30
+  },
+  "grades_available": 909,
+  "grades_expected": 960,
+  "format_harmonisation": [
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "field": "grade",
+      "values": 224,
+      "distinct_formats": 5,
+      "examples": "grade N | N | Nth | gN | word"
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "field": "phone",
+      "values": 224,
+      "distinct_formats": 7,
+      "examples": "+N NNN NNN NNNN | (NNN) NNN-NNNN | NNN.NNN.NNNN | NNN-NNN-NNNN | NNNNNNNNNN"
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "field": "transport",
+      "values": 224,
+      "distinct_formats": 12,
+      "examples": "Bus | Car | Walk | Bicycle | bus"
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "students_found": 240,
+  "student_fields": {
+    "first_name": {
+      "correct": 240,
+      "withheld": 0,
+      "wrong": 0
+    },
+    "last_name": {
+      "correct": 240,
+      "withheld": 0,
+      "wrong": 0
+    },
+    "gender": {
+      "correct": 236,
+      "withheld": 4,
+      "wrong": 0
+    },
+    "date_of_birth": {
+      "correct": 236,
+      "withheld": 4,
+      "wrong": 0
+    },
+    "grade": {
+      "correct": 240,
+      "withheld": 0,
+      "wrong": 0
+    },
+    "section": {
+      "correct": 240,
+      "withheld": 0,
+      "wrong": 0
+    }
+  },
+  "grades_clean": {
+    "Math": {
+      "correct": 239,
+      "withheld": 1,
+      "wrong": 0
+    },
+    "English": {
+      "correct": 239,
+      "withheld": 1,
+      "wrong": 0
+    },
+    "Science": {
+      "correct": 230,
+      "withheld": 10,
+      "wrong": 0
+    },
+    "History": {
+      "correct": 236,
+      "withheld": 4,
+      "wrong": 0
+    }
+  },
+  "attendance": {
+    "days_present": {
+      "correct": 240,
+      "withheld": 0,
+      "wrong": 0
+    },
+    "days_late": {
+      "correct": 240,
+      "withheld": 0,
+      "wrong": 0
+    },
+    "days_absent": {
+      "correct": 240,
+      "withheld": 0,
+      "wrong": 0
+    }
+  },
+  "guardians": {
+    "guardian_email": {
+      "correct": 218,
+      "withheld": 6,
+      "wrong": 0
+    },
+    "guardian_phone": {
+      "correct": 219,
+      "withheld": 5,
+      "wrong": 0
+    },
+    "prev_school_avg_pct": {
+      "correct": 211,
+      "withheld": 13,
+      "wrong": 0
+    },
+    "siblings": {
+      "correct": 218,
+      "withheld": 6,
+      "wrong": 0
+    },
+    "transport": {
+      "correct": 224,
+      "withheld": 0,
+      "wrong": 0
+    }
+  },
+  "grades_naive": {
+    "Math": {
+      "correct": 220,
+      "withheld": 13,
+      "wrong": 7
+    },
+    "English": {
+      "correct": 204,
+      "withheld": 9,
+      "wrong": 27
+    },
+    "Science": {
+      "correct": 151,
+      "withheld": 33,
+      "wrong": 56
+    },
+    "History": {
+      "correct": 216,
+      "withheld": 14,
+      "wrong": 10
+    }
+  },
+  "detection": [
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "dob_illogical",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "dob_missing",
+      "injected": 8,
+      "handled": 8
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "dob_text_format",
+      "injected": 20,
+      "handled": 20
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "duplicate_id_conflict",
+      "injected": 2,
+      "handled": 2
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "duplicate_row",
+      "injected": 4,
+      "handled": 4
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "gender_missing",
+      "injected": 4,
+      "handled": 4
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "gender_variant",
+      "injected": 18,
+      "handled": 18
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "grade_mismatch",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "id_format",
+      "injected": 14,
+      "handled": 14
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "name_case_space",
+      "injected": 16,
+      "handled": 16
+    },
+    {
+      "source": "01_student_roster.xlsx",
+      "category": "section_format",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "blank",
+      "injected": 15,
+      "handled": 15
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "dob_conflict",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "duplicate_submission",
+      "injected": 12,
+      "handled": 12
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "email_case_space",
+      "injected": 10,
+      "handled": 10
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "email_invalid",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "email_typo",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "illogical_value",
+      "injected": 4,
+      "handled": 4
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "letter_grade",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "name_mismatch",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "number_as_word",
+      "injected": 8,
+      "handled": 8
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "number_with_text",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "phone_invalid",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "scale_fraction",
+      "injected": 12,
+      "handled": 12
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "scale_gpa",
+      "injected": 17,
+      "handled": 17
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "scale_percent_sign",
+      "injected": 15,
+      "handled": 15
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "test_submission",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "unknown_id",
+      "injected": 2,
+      "handled": 2
+    },
+    {
+      "source": "02_enrollment_form_responses.csv",
+      "category": "wrong_id",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "component_out_of_range",
+      "injected": 4,
+      "handled": 4
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "duplicate_conflict",
+      "injected": 2,
+      "handled": 2
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "id_missing",
+      "injected": 8,
+      "handled": 8
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "illogical_total",
+      "injected": 8,
+      "handled": 8
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "number_as_text",
+      "injected": 16,
+      "handled": 16
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "row_missing",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "scale_fraction",
+      "injected": 20,
+      "handled": 20
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "text_absent",
+      "injected": 8,
+      "handled": 8
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "text_not_available",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "total_blank",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "03_gradebook_term1.xlsx",
+      "category": "total_mismatch",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "comma_decimal",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "id_letter_O",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "id_missing",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "id_missing_name_typo",
+      "injected": 3,
+      "handled": 2
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "letter_grade",
+      "injected": 4,
+      "handled": 4
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "misplaced_decimal",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "out_of_range",
+      "injected": 2,
+      "handled": 2
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "row_missing",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "scale_percent_in_fraction_column",
+      "injected": 14,
+      "handled": 14
+    },
+    {
+      "source": "04_science_department_results.docx",
+      "category": "text_not_available",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "comma_decimal",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "duplicate_row",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "gpa_over_4",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "id_format",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "illogical_value",
+      "injected": 1,
+      "handled": 1
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "number_as_text",
+      "injected": 4,
+      "handled": 4
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "row_missing",
+      "injected": 2,
+      "handled": 2
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "scale_percent_in_gpa_column",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "05_history_gpa_report.pdf",
+      "category": "text_not_available",
+      "injected": 5,
+      "handled": 5
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "absent_but_swiped",
+      "injected": 8,
+      "handled": 8
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "duplicate_swipe",
+      "injected": 40,
+      "handled": 40
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "early_leave",
+      "injected": 12,
+      "handled": 12
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "id_empty",
+      "injected": 4,
+      "handled": 4
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "id_format",
+      "injected": 10,
+      "handled": 10
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "impossible_date",
+      "injected": 2,
+      "handled": 2
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "late_not_marked",
+      "injected": 10,
+      "handled": 10
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "missing_checkin",
+      "injected": 10,
+      "handled": 10
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "missing_checkout",
+      "injected": 15,
+      "handled": 15
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "no_record",
+      "injected": 3,
+      "handled": 3
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "odd_hour_swipe",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "timestamp_format",
+      "injected": 1,
+      "handled": 1
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "truncated_line",
+      "injected": 6,
+      "handled": 6
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "unknown_id",
+      "injected": 8,
+      "handled": 8
+    },
+    {
+      "source": "06_gate_attendance.log",
+      "category": "weekend_swipe",
+      "injected": 5,
+      "handled": 5
+    }
+  ],
+  "detection_total": {
+    "injected": 538,
+    "handled": 537
+  }
+}
